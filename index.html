@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+          <div class="header__left">
+            <img src="assets/images/components/logo.svg" alt="" class="header__logo"/>
+            <nav class="header__nav">
+              <ul class="list header__menu">
+                <li class="nav-dropdown">
+                    <button onclick="toggleDropdown(event, 'navDropdown-1')" class="dropdown-button">
+                      <p>Product</p>
+                      <img style="margin-left: 5px;" src="assets/images/components/arrow-down.svg" alt="arrow-down" class="dropdown-arrow">
+                    </button>
+                    <div style="background-color: var(--color-primary);" id="navDropdown-1" class="dropdown__menu">
+                      <a href="#">Storage</a>
+                      <a href="#">Auth</a>
+                      <a href="#">Database</a>
+                      <a href="#">Functions</a>
+                    </div>
+                </li>            
+                <li class="nav-dropdown">
+                    <button onclick="toggleDropdown(event, 'navDropdown-2')" class="dropdown-button">
+                      <p>Developers</p>
+                      <img style="margin-left: 5px;" src="assets/images/components/arrow-down.svg" alt="arrow-down" class="dropdown-arrow">
+                    </button>
+                    <div style="background-color: var(--color-primary);" id="navDropdown-2" class="dropdown__menu">
+                      <a href="#">Edge Functions</a>
+                      <a href="#">Realtime</a>
+                      <a href="#">API</a>
+                    </div>
+                </li>
+                <li class="menu__item">
+                  <button class="dropbtn">Developers<img src="assets/images/components/arrow-down.svg" alt=""></button>
+                  <div class="dopdown-content" id="myDropdown">
+                      <a href="#">Edge Functions</a>
+                      <a href="#">Realtime</a>
+                      <a href="#">API</a>
+                  </div>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="header__link">Beta</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="header__link">Pricing</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__actions">
+            <button class="btn btn-green header__btn-start_project">Start your project</button>
+            <button onclick="showModal()" class="btn header__btn-sign_in">Sign in</button>
+          </div>
+        </div>
+      </header>
+        <main class="main">
+          <section class="banner">
+            <div class="banner__container">
+              <div class="banner__info">
+                <div class="banner__storage">Storage</div>
+                <h1 class="banner__title">Store and serve <br>any type of digital content</h1>
+                <p class="banner__desc">An open source Object store service with unlimited scalability, for <br> any file type.</p>
+                <p class="banner__desc">With custom pdivicies and permissions that are familiar and easy to <br> implement.</p>
+                <button class="btn btn-green header__btn-start_project">Start a project</button>
+              </div>
+              <img src="assets/images/banner/Frame.png" alt="" class="banner__img">
+            </div>
+          </section>
+          <section class="benefits">
+            <div class="benefits__container">
+              <ul class="benefits__list">
+                <li class="benefit benefit-interoperable">
+                  <h3 class="benefit__title">Interoperable</h3>
+                  <p class="benefit__desc">Integrates well with the rest of Supabase ecosystem, including Auth and Postgres.</p>
+                </li>
+                <li class="benefit benefit-lightningfast">
+                  <h3 class="benefit__title">Lightning fast</h3>
+                  <p class="benefit__desc">Thin API server layer that leverages Postgres' permissions and performance.</p>
+                </li>
+                <li class="benefit benefit-dependable">
+                  <h3 class="benefit__title">Dependable</h3>
+                  <p class="benefit__desc">Enterprise-level scalability and durability.</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="info indo__container container">
+        <div class="info__top">
+            <h2 class="section__title">Sleek dashboard for managing your media</h2>
+            <p class="section__desc">A complete Object Explorer so that any of your team can use.</p>
+            <p class="section__desc desc2">Drag and drop uploading, moving objects, and multiple object selection. As easy as working on your desktop.</p>
+        </div>
+        <div class="info__tabs tabs__btns">
+            <button class="tab__btn active">File previews</button>
+            <button class="tab__btn">Column view</button>
+            <button class="tab__btn">List view</button>
+            <button class="tab__btn">Multi select actions</button>
+            <button class="tab__btn">Path navigator</button>
+        </div>
+        <div class="tab__slides">
+            <div class="tab__slide active">
+                <img src="assets/images/info/slide1.jpg" class="slide__img" alt="">
+                <div class="slide__text">
+                    <h4 class="slide__title">File previews</h4>
+                    <p class="slide__desc">Preview any media type, including video and audio.</p>
+                    <h4 class="slide__title">Check out our example app</h4>
+                    <div class="slide dopinfo">
+                        <h4 class="slide__title">Profile management example</h4>
+                        <p class="slide__desc">Update a user account with public profile information, including uploading a profile image. Update a user account with public profile information, including uploading a profile image.</p>
+                    </div>
+                    <p style="margin: 4px 20px 0px 20px;" class="slide__desc">nextjs-ts-user-management</p>
+                    <button style="margin: 0px 0px 20px 20px;" class="info__btn-deploy">
+                        <img src="assets/images/info/Vector.svg" alt="" class="btn-img">
+                        Deploy
+                    </button>
+                </div>
+            </div>
+            <div class="tab__slide">
+                <img src="assets/images/info/slide2.jfif" class="slide__img" alt="">
+                <div class="slide__text">
+                    <h4 class="slide__title">Column view</h4>
+                    <p class="slide__desc"> Navigate folders in a hierarchical layout</p>
+                    <h4 class="slide__title">perfect for deep directory structures.</h4>
+                    <div class="slide dopinfo">
+                        <h4 class="slide__title">Иерархический просмотр</h4>
+                        <p class="slide__desc">Удобная навигация по папкам в виде колонок. Перемещайтесь между вложенными директориями, сохраняя контекст пути.</p>
+                    </div>
+                    <p style="margin: 4px 20px 0px 20px;" class="slide__desc">nextjs-ts-user-management</p>
+                    <button style="margin: 0px 0px 20px 20px;" class="info__btn-deploy">
+                        <img src="assets/images/info/Vector.svg" alt="" class="btn-img">
+                        Deploy
+                    </button>
+                </div>
+            </div>
+            <div class="tab__slide">
+                <img src="assets/images/info/slide3.jpg" class="slide__img" alt="">
+                <div class="slide__text">
+                    <h4 class="slide__title">List view</h4>
+                    <p class="slide__desc">Clean, compact file listing with details like size</p>
+                    <h4 class="slide__title">date, and type.</h4>
+                    <div class="slide dopinfo">
+                        <h4 class="slide__title">Компактный список файлов</h4>
+                        <p class="slide__desc">Отображает файлы и папки в виде упорядоченного списка с деталями: дата изменения, размер и тип. Идеально для быстрого поиска.</p>
+                    </div>
+                    <p style="margin: 4px 20px 0px 20px;" class="slide__desc">nextjs-ts-user-management</p>
+                    <button style="margin: 0px 0px 20px 20px;" class="info__btn-deploy">
+                        <img src="assets/images/info/Vector.svg" alt="" class="btn-img">
+                        Deploy
+                    </button>
+                </div>
+            </div>
+            <div class="tab__slide">
+                <img src="assets/images/info/slide4.png" class="slide__img" alt="">
+                <div class="slide__text">
+                    <h4 class="slide__title">Multi-select actions</h4>
+                    <p class="slide__desc">Select multiple files at once to move</p>
+                    <h4 class="slide__title">delete, or share in bulk.</h4>
+                    <div class="slide dopinfo">
+                        <h4 class="slide__title">Групповое управление файлами</h4>
+                        <p class="slide__desc">Выделяйте несколько файлов и выполняйте массовые операции: копирование, удаление, перемещение или архивирование.</p>
+                    </div>
+                    <p style="margin: 4px 20px 0px 20px;" class="slide__desc">nextjs-ts-user-management</p>
+                    <button style="margin: 0px 0px 20px 20px;" class="info__btn-deploy">
+                        <img src="assets/images/info/Vector.svg" alt="" class="btn-img">
+                        Deploy
+                    </button>
+                </div>
+            </div>
+            <div class="tab__slide">
+                <img src="assets/images/info/slide5.png" class="slide__img" alt="">
+                <div class="slide__text">
+                    <h4 class="slide__title">Path navigator</h4>
+                    <p class="slide__desc">Track and jump to any folder in your</p>
+                    <h4 class="slide__title">current directory path instantly.</h4>
+                    <div class="slide dopinfo">
+                        <h4 class="slide__title">Быстрый доступ к папкам</h4>
+                        <p class="slide__desc">Видите полный путь к текущей папке и мгновенно переходите в любую часть директории одним кликом.</p>
+                    </div>
+                    <p style="margin: 4px 20px 0px 20px;" class="slide__desc">nextjs-ts-user-management</p>
+                    <button style="margin: 0px 0px 20px 20px;" class="info__btn-deploy">
+                        <img src="assets/images/info/Vector.svg" alt="" class="btn-img">
+                        Deploy
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    <section class="integration container">
+    <h2 class="integration__title">Integrates natively<br> with Supabase Auth</h2>
+    <div class="integration__accordion">
+        <div class="integration__item">
+            <button class="integration__header" onclick="toggleAccordion(this)">
+                <p class="integration__header-text">Using Postgres Row Level Security to create Object access rules.</p>
+                <img src="assets/images/components/arrow-down.svg" alt="arrow" class="integration__arrow">
+            </button>
+            <div class="integration__content">
+                <p class="integration__content-text">Storage Authorization is built around Postgres so that you can use any combination of SQL,
+                    Postgres functions, and even your own metadata to write policies.</p>
+                <a style="padding: 10px; background-color: var(--color-primary); color: #fff; border-radius: 4px;" href="#" class="integration__link">Explore documentation</a>
+            </div>
+        </div>
+        <div class="integration__item">
+            <button class="integration__header" onclick="toggleAccordion(this)">
+                <p class="integration__header-text">File access controls with custom policies</p>
+                <img src="assets/images/components/arrow-down.svg" alt="arrow" class="integration__arrow">
+            </button>
+            <div class="integration__content">
+                <p class="integration__content-text">Create fine-grained access controls for your files using SQL policies that integrate directly with your authentication system.</p>
+                <a style="padding: 10px; background-color: var(--color-primary); color: #fff; border-radius: 4px;" href="#" class="integration__link">Explore documentation</a>
+            </div>
+        </div>
+        <div class="integration__item">
+            <button class="integration__header" onclick="toggleAccordion(this)">
+                <p class="integration__header-text">Scalable storage infrastructure</p>
+                <img src="assets/images/components/arrow-down.svg" alt="arrow" class="integration__arrow">
+            </button>
+            <div class="integration__content">
+                <p class="integration__content-text">Our storage solution scales automatically to handle any amount of data while maintaining high performance and reliability.</p>
+                <a style="padding: 10px; background-color: var(--color-primary); color: #fff; border-radius: 4px;" href="#" class="integration__link">Explore documentation</a>
+            </div>
+        </div>
+    </div>
+</section>
+    </section>
+        </main>
+        <footer class="footer">
+          <div class="footer__container">
+            <a href="#" class="footer__logo"><img src="assets/images/components/logo.svg" alt=""></a>
+            <nav class="footer__nav">
+              <ul class="menu__list">
+                <li>
+                  <ul class="footer__menu">
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Products</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Products</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Products</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Products</a>
+                    </li>
+                  </ul>
+                  </li>
+                  <li>
+                    <ul class="footer__menu">
+                      <li class="menu__item">
+                        <a href="#" class="menu__link">Products</a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="#" class="menu__link">Products</a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="#" class="menu__link">Products</a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="#" class="menu__link">Products</a>
+                      </li>
+                    </ul>
+                  </li>              
+                  <li>
+                    <ul class="footer__menu">
+                      <li class="menu__item">
+                        <a href="#" class="menu__link">Products</a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="#" class="menu__link">Products</a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="#" class="menu__link">Products</a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="#" class="menu__link">Products</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                  <ul class="footer__menu">
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Products</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Products</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Products</a>
+                    </li>
+                    <li class="menu__item">
+                       <a href="#" class="menu__link">Products</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
+        <div class="modalfon" id="modal" style="display: none;">
+        <div class="modal__content">
+            <!-- <input placeholder="Имя" type="text" class="inp"> -->
+            <p style="font-size: 24px;">Вход</p>
+            <input placeholder="Email" type="text" class="inp">
+            <input placeholder="Пароль" type="text" class="inp">
+            <button class="btn-submit" type="submit">Войти</button>
+            <span class="modalClose" onclick="hideModal()">x</span>
+        </div>
+      </div>
+		</div>
+		<script src="assets/js/main.js" defer></script>
+	</body>
+</html>

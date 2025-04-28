@@ -1,0 +1,38 @@
+.benefits {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.55556;
+}
+.benefits__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.benefit {
+    padding-top: 48px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.benefit::before{
+    content: "";
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 100%;
+}
+.benefit__desc {
+    color: #e0e0e0;
+}
+.benefit-interoperable {
+    background-repeat: no-repeat;
+    background-image: url(../../images/benefits/b1.svg);
+}
+.benefit-lightningfast {
+    background-repeat: no-repeat;
+    background-image: url(../../images/benefits/b2svg.svg);
+}
+.benefit-dependable {
+    background-repeat: no-repeat;
+    background-image: url(../../images/benefits/b3.svg);
+}

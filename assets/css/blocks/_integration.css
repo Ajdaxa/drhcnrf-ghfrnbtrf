@@ -1,0 +1,243 @@
+.faq__container {
+	width: 100%;
+	background: inherit;
+}
+.faq__list {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.faq__item {
+	border-radius: 10px;
+	background: inherit;
+	/* padding: 15px 20px; */
+}
+.faq__top {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+.faq__toggle.rotated .asd {
+	stroke: #fff;
+}
+.dropdown__list.open + .faq__item-title {
+	color: #fff;
+}
+.faq__item-desc {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.42857;
+	color: #e0e0e0;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease;
+}
+.faq__item.active .faq__item-desc {
+	max-height: 500px;
+}
+.faq__toggle {
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+.faq__toggle.rotated {
+	transform: rotate(180deg);
+	color: #fff !important;
+}
+.faq__item.active .faq__toggle {
+	transform: rotate(180deg);
+}
+
+.block {
+    margin: 0 0 30px 0;
+}
+
+.block__item {
+	margin-bottom: 20px;
+    margin: 0 0 10px 0;
+}
+.block__title {
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    background-color: transparent;
+    color: #fff;
+    /* padding: 10px; */
+    position: relative;
+
+}
+
+.block._init .block__title {
+    cursor: pointer;
+}
+
+.block._init .block__title {
+    /* padding: 10px 40px 10px 10px; */
+}
+
+.block._init .block__title::before, 
+.block._init .block__title::after {
+    content:"";
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    transition: transform .3s ease 0s;
+}
+
+.block._init .block__title::before {
+    transform: rotate(45deg) translateX(-10px);
+}
+
+.block._init .block__title._active::before {
+    transform: rotate(-45deg) translateX(-10px);
+}
+.block._init .block__title::after {
+    transform: rotate(-45deg) translateX(10px);
+}
+
+.block._init .block__title._active::after {
+    transform: rotate(45deg) 
+	translateX(10px);
+}
+
+.block__text {
+    /* padding: 0 10px 10px; */
+    line-height: 130%;
+	margin-top: 10px;
+    color: #fff;
+}
+.block_1 {
+    background-color: transparent;
+}
+.block__btn{
+	margin-top: 10px;
+	display: flex;
+	gap: 10px;
+	padding: 10px 20px;
+	background-color: #2A2A2A;
+}
+.integration-section {
+    margin: 100px auto 200px;
+}
+
+.accordion-container {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: none;
+    border: none;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.accordion-item {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.accordion-content {
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    display: none;
+}
+
+.documentation-link {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 16px;
+    background-color: #24B47E;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+}
+
+.integration {
+    margin: 64px 0;
+}
+
+.integration__title {
+    font-size: 32px;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.integration__accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.integration__item {
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.integration__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    padding: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.integration__header-text {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+}
+
+.integration__arrow {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.integration__header_active .integration__arrow {
+    transform: rotate(180deg);
+}
+
+.integration__content {
+    display: none;
+    padding: 16px;
+    background-color: #1e1e1e;
+}
+
+.integration__content_active {
+    display: block;
+}
+
+.integration__content-text {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-bottom: 16px;
+}
+
+.integration__link {
+    font-size: 14px;
+    color: #1374ef;
+    text-decoration: none;
+}

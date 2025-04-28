@@ -1,0 +1,35 @@
+.footer {
+    padding: 50px 0;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__logo {
+}
+.footer__nav {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.menu__list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer__menu {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__item {
+}
+.menu__link {
+}
